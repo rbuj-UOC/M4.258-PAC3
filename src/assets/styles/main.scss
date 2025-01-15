@@ -3,32 +3,41 @@
  * Do not include SCSS code in this file.
  */
 
+@tailwind base;
+@tailwind components;
+
+/**
+ * ITCSS - Settings
+ */
+@import "/src/assets/styles/settings/fonts";
+
+/**
+ * ITCSS - Tools
+ */
+@import "/src/assets/styles/tools/mixins";
+
+/**
+ * ITCSS - Generic
+ */
 @import "npm:normalize-scss/sass/normalize/import-now";
 
 /**
- * Import variables
+ * ITCSS - Elements
  */
-
-@import "variables";
+@import "/src/assets/styles/elements/body";
+@import "/src/assets/styles/elements/headings";
 
 /**
- * Import npm dependencies
- * see: https://v2.parceljs.org/features/module-resolution/
- * see commented examples below
+ * ITCSS - Objects
  */
-@import "npm:@fortawesome/fontawesome-free/css/all.css";
 
-@tailwind base;
-@tailwind components;
+/**
+ * ITCSS - Components
+ */
+ @import "/src/assets/styles/components/post-image";
+
+/**
+ * ITCSS - Trumps
+ */
+
 @tailwind utilities;
-
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
-
-@import "layouts/home";
-
-/**
- * Do NOT include anything else in this file!
- */
