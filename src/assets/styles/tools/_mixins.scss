@@ -1,7 +1,0 @@
-@mixin tools-mixins-post-image($x: 50%, $y: 50%) {
-  align-items: center;
-  height: 530px;
-  width: 100%;
-  object-fit: cover;
-  object-position: $x $y;
-}

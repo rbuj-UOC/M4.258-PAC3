@@ -1,0 +1,12 @@
+<div class="fex flex-col h-full w-full rounded-md overflow-hidden shadow-lg bg-primary">
+  <picture>
+    <source srcset="{{ image }}?as=avif&width=600, {{ image }}?as=avif&width=1200 2x" type="image/avif">
+    <img
+      src="{{ image }}?width=600"
+      alt="{{ name }}">
+  </picture>
+  <div class="flex-1 p-4 text-white">
+    <h2 class="font-serif">{{ name }}</h2>
+    <p>{{ description }}</p>
+  </div>
+</div>

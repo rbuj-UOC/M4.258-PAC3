@@ -5,16 +5,11 @@
 
 @tailwind base;
 @tailwind components;
-
-/**
- * ITCSS - Settings
- */
-@import "/src/assets/styles/settings/fonts";
+@tailwind utilities;
 
 /**
  * ITCSS - Tools
  */
-@import "/src/assets/styles/tools/mixins";
 
 /**
  * ITCSS - Generic
@@ -24,20 +19,35 @@
 /**
  * ITCSS - Elements
  */
-@import "/src/assets/styles/elements/body";
-@import "/src/assets/styles/elements/headings";
-
-/**
- * ITCSS - Objects
- */
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-[calc(1.325rem+.8vw)] leading-10;
+  }
+  body {
+    @apply bg-quaternary text-primary leading-6 text-base;
+  }
+}
 
 /**
  * ITCSS - Components
  */
- @import "/src/assets/styles/components/post-image";
-
-/**
- * ITCSS - Trumps
- */
-
-@tailwind utilities;
+@layer components {
+  .article-news {
+    @apply col-span-1 sm:col-start-2 sm:col-span-10 lg:col-start-3 lg:col-span-8 pb-8 sm:pb-12 lg:pb-16;
+  }
+  .btn-primary {
+    @apply bg-primary hover:bg-ternary text-white font-bold py-2 px-4 rounded;
+  }
+  .post-image--top {
+    @apply h-[530px] w-full object-cover object-top;
+  }
+  .post-image--center {
+    @apply h-[530px] w-full object-cover object-center;
+  }
+  .post-image--bottom {
+    @apply h-[530px] w-full object-cover object-bottom;
+  }
+}

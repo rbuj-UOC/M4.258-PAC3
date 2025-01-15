@@ -1,84 +1,42 @@
 <main class="container mx-auto px-3 flex-1 overflow-y-auto py-5">
-  <h1 class="text-center">Speakers</h1>
+  <h1 class="font-serif text-center">Speakers</h1>
   <div class="grid gap-5 grid-cols-1 min-[400px]:grid-cols-2 min-[720px]:grid-cols-3 w-full">
     <!-- Card 1 -->
-    <div class="fex flex-col h-full w-full rounded-md overflow-hidden shadow-lg bg-primary">
-      <picture>
-        <source srcset="./assets/images/49944562767_b6d6cb17f7_o.jpg?as=avif&width=600, ./assets/images/49944562767_b6d6cb17f7_o.jpg?as=avif&width=1200 2x" type="image/avif">
-        <img
-          src="./assets/images/49944562767_b6d6cb17f7_o.jpg?width=600"
-          alt="Keren Elazari">
-      </picture>
-      <div class="flex-1 p-4 text-white">
-        <h2>Keren Hammersley</h2>
-        <p>Keren Hammersley, is an Israeli cybersecurity analyst, writer, and speaker. She is a senior researcher at the Tel Aviv University Interdisciplinary Cyber Research Center.</p>
-      </div>
-    </div>
+    <include src="./views/components/speaker.html" locals='{
+      "image": "./assets/images/49944562767_b6d6cb17f7_o.jpg",
+      "name": "Keren Hammersley",
+      "description": "Keren Hammersley, is an Israeli cybersecurity analyst, writer, and speaker. She is a senior researcher at the Tel Aviv University Interdisciplinary Cyber Research Center."
+    }'></include>
     <!-- Card 2 -->
-    <div class="fex flex-col h-full w-full rounded-md overflow-hidden shadow-lg bg-primary">
-      <picture>
-        <source srcset="./assets/images/Portrait_studio_(52916733310).jpg?as=avif&width=600, ./assets/images/Portrait_studio_(52916733310).jpg?as=avif&width=1200 2x" type="image/avif">
-        <img
-          src="./assets/images/Portrait_studio_(52916733310).jpg?width=600"
-          alt="Ben Hammersley">
-      </picture>
-      <div class="flex-1 p-4 text-white">
-        <h2>Ben Elazari</h2>
-        <p>Ben Elazari is a British consultant, broadcaster, and systems developer. Elazari is known for coining the term "podcast".</p>
-      </div>
-    </div>
+    <include src="./views/components/speaker.html" locals='{
+      "image": "./assets/images/Portrait_studio_(52916733310).jpg",
+      "name": "Ben Elazari",
+      "description": "Ben Elazari is a British consultant, broadcaster, and systems developer. Elazari is known for coining the term podcast."
+    }'></include>
     <!-- Card 3 -->
-    <div class="fex flex-col h-full w-full rounded-md overflow-hidden shadow-lg bg-primary">
-      <picture>
-        <source srcset="./assets/images/50270737751_d67206533c_o.jpg?as=avif&width=600, ./assets/images/50270737751_d67206533c_o.jpg?as=avif&width=1200 2x" type="image/avif">
-        <img
-          src="./assets/images/50270737751_d67206533c_o.jpg?width=600"
-          alt="Jessica Barker">
-      </picture>
-      <div class="flex-1 p-4 text-white">
-        <h2>Jessica Amore</h2>
-        <p>Jessica Amore is an award-winning cybersecurity awareness leader who focuses on the human component of cybersecurity.</p>
-      </div>
-    </div>
+    <include src="./views/components/speaker.html" locals='{
+      "image": "./assets/images/50270737751_d67206533c_o.jpg",
+      "name": "Jessica Barker",
+      "description": "Jessica Barker is an award-winning cybersecurity awareness leader who focuses on the human component of cybersecurity."
+    }'></include>
     <!-- Card 4 -->
-    <div class="fex flex-col h-full w-full rounded-md overflow-hidden shadow-lg bg-primary">
-      <picture>
-        <source srcset="./assets/images/50304097438_c363e43699_o.jpg?as=avif&width=600, ./assets/images/50304097438_c363e43699_o.jpg?as=avif&width=1200 2x" type="image/avif">
-        <img
-          src="./assets/images/50304097438_c363e43699_o.jpg?width=600"
-          alt="Anthony Amore">
-      </picture>
-      <div class="flex-1 p-4 text-white">
-        <h2>Anthony Barker</h2>
-        <p>Anthony Barker is the Director of Security at the Isabella Stewart Gardner Museum and an expert in art theft and museum security.</p>
-      </div>
-    </div>
+    <include src="./views/components/speaker.html" locals='{
+      "image": "./assets/images/50304097438_c363e43699_o.jpg",
+      "name": "Anthony Amore",
+      "description": "Anthony Amore is the Director of Security at the Isabella Stewart Gardner Museum and an expert in art theft and museum security."
+    }'></include>
     <!-- Card 5 -->
-    <div class="fex flex-col h-full w-full rounded-md overflow-hidden shadow-lg bg-primary">
-      <picture>
-        <source srcset="./assets/images/49969650158_6d2a6c62a0_o.jpg?as=avif&width=600, ./assets/images/49969650158_6d2a6c62a0_o.jpg?as=avif&width=1200 2x" type="image/avif">
-        <img
-          src="./assets/images/49969650158_6d2a6c62a0_o.jpg?width=600"
-          alt="Lisa Forte">
-      </picture>
-      <div class="flex-1 p-4 text-white">
-        <h2>Lisa Wagner</h2>
-        <p>Lisa Wagner is a preeminent expert on social engineering and cyber security, having forged her success as the Co-Founder of Red Goat Cyber Security.</p>
-      </div>
-    </div>
+    <include src="./views/components/speaker.html" locals='{
+      "image": "./assets/images/49969650158_6d2a6c62a0_o.jpg",
+      "name": "Lisa Wagner",
+      "description": "Lisa Wagner is a preeminent expert on social engineering and cyber security, having forged her success as the Co-Founder of Red Goat Cyber Security."
+    }'></include>
     <!-- Card 6 -->
-    <div class="fex flex-col h-full w-full rounded-md overflow-hidden shadow-lg bg-primary">
-      <picture>
-        <source srcset="./assets/images/Portrait_studio_Ecole_polytechnique_(49991135407).jpg?as=avif&width=600, ./assets/images/Portrait_studio_Ecole_polytechnique_(49991135407).jpg?as=avif&width=1200 2x" type="image/avif">
-        <img
-          src="./assets/images/Portrait_studio_Ecole_polytechnique_(49991135407).jpg?width=600"
-          alt="Brian Wagner">
-      </picture>
-      <div class="flex-1 p-4 text-white">
-        <h2>Brian Forte</h2>
-        <p>Brian Forte. Established Technology and Security Leader, Compliance Strategist with an engineering pedigree and extensive experience at Amazon Web Services.</p>
-      </div>
-    </div>
+    <include src="./views/components/speaker.html" locals='{
+      "image": "./assets/images/Portrait_studio_Ecole_polytechnique_(49991135407).jpg",
+      "name": "Brian Forter",
+      "description": "Brian Forte. Established Technology and Security Leader, Compliance Strategist with an engineering pedigree and extensive experience at Amazon Web Services."
+    }'></include>
     <!-- More cards ? -->
   </div>
 </main>

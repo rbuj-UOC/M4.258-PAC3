@@ -18,6 +18,10 @@ module.exports = {
       white: "#f5f5f5",
       black: "#000",
     },
+    fontFamily: {
+      sans: ["Roboto", "Helvetica Neue", "Arial", "sans-serif"],
+      serif: ["Georgia", "Times New Roman", "serif"]
+    },
     extend: {},
   },
   plugins: [],
