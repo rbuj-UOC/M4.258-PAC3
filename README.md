@@ -1,3 +1,4 @@
+[![Node.js CI](https://github.com/rbuj-UOC/M4.258-PAC3/actions/workflows/node.js.yml/badge.svg)](https://github.com/rbuj-UOC/M4.258-PAC3/actions/workflows/node.js.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6ca12e5e-1970-4e7b-a70b-89c64c7eac8e/deploy-status)](https://app.netlify.com/sites/inquisitive-gecko-13541f/deploys)
 
 
