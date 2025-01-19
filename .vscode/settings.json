@@ -1,4 +1,9 @@
 {
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.snippet": ["css", "postcss", "scss"],
+  "stylelint.validate": ["css", "scss"],
   "eslint.enable": true,
   "eslint.validate": [
     "javascript", // ...
@@ -10,9 +15,6 @@
     "source.fixAll.eslint": "explicit"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "files.associations": {
-    "*.scss": "postcss"
-  },
   "editor.quickSuggestions": {
     "strings": "on"
   },
