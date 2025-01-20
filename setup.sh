@@ -1,7 +1,10 @@
 #!/bin/bash
 npm install --save @fortawesome/fontawesome-free
 npm install --save normalize-scss
-npm i -D tailwindcss postcss
+
+npm install --save-dev tailwindcss postcss
+
+npm install --save-dev parcel-reporter-static-files-copy
 
 npm install --save-dev \
   stylelint\
